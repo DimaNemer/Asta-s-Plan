@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asta's Preparation Dashboard
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Asta's Preparation Dashboard is a simple web application inspired by the Black Clover anime.
+
+The dashboard helps Asta track his training progress while preparing to fight Lucifero. It includes three training tasks that users can mark as completed and a progress bar that updates automatically.
+
+This project was built as part of an AI-assisted development assignment.
+
+## Developed By
+
+**Dima Nemer**
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Google Stitch for UI design
+- GitHub Copilot with MCP for AI-assisted development
+
+## Features
+
+- Displays Asta's preparation goal and Lucifero's threat.
+- Shows three training tasks with descriptions and priorities.
+- Allows users to complete or undo tasks.
+- Automatically updates the completed task count and progress percentage.
+- Displays a progress bar.
+- Supports desktop and mobile screens.
+- Supports keyboard interaction.
+
+## Installation and Setup
+
+**1. Clone the repository**
+
+```bash
+git clone <https://github.com/DimaNemer/Asta-s-Plan.git>
+```
+
+**2. Open the project folder**
+
+```bash
+cd asta-plan
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Run the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**5. Open the application**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit http://localhost:3000 in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Testing
 
-## Learn More
+The following commands were run successfully:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The dashboard was also tested manually for task completion, progress calculation, keyboard interaction, and responsive layout.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Limitations
 
-## Deploy on Vercel
+- The dashboard contains only three predefined tasks.
+- Task progress is not saved after refreshing the page.
+- There is no login system or database.
+- The progress percentage represents training-plan completion, not Asta's chance of defeating Lucifero.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Documentation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [PRD — Requirements](docs/PRD.md)
+- [Design — Stitch Screens and Decisions](docs/DESIGN.md)
+- [MCP — Connection and Verification](docs/MCP.md)
+- [POC — Proof of Concept](docs/POC.md)
+- [Review — Testing, Feedback, and Reflection](docs/REVIEW.md)
+- [Evidence — Screenshots](docs/evidence/)
+
+## Development Process
+
+I followed a step-by-step development process:
+
+1. Defined and reviewed the project requirements.
+2. Created and refined the design using Google Stitch.
+3. Connected Google Stitch to GitHub Copilot using MCP.
+4. Built a small POC to test task completion and progress calculation.
+5. Developed the responsive MVP.
+6. Tested the application and reviewed the results.
+
+The project was developed with AI assistance, but I reviewed the requirements, selected the design, tested the functionality, and verified the final implementation.
